@@ -1,0 +1,718 @@
+:root{
+    --white : #ffffff;
+    --black : #101010;
+    --lightblack : #1f1f1f;
+    --yellow : #e1a100;
+    --green : rgb(17, 181, 74);
+
+    --bold : 700;
+    --normal : 500;
+    --light : 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: var(--yellow);
+    z-index: 999;
+}
+
+.logo{
+    width: 300px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation img{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-family: "Roboto";
+    position: relative;
+}
+
+.navigation a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -5px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.navigation a:hover::before{
+    width: 100%;
+}
+
+.hero-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.hero{
+    background-image: url(img/lawyer\ image-3.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 40%;
+}
+
+.text-container{
+    width: 60%;
+    height: 80%;  
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-container h1{
+    width: 100%;
+    font-size: 64px;
+    font-family: "Roboto";
+    font-weight: var(--bold);
+    color: var(--white);
+    letter-spacing: 0.02em;
+    margin-top: 40px;
+}
+
+.text-container h2{
+    width: 100%;
+    font-size: 24px;
+    font-family: "Roboto";
+    color: var(--white);
+    font-weight: var(--light);
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    margin-bottom: 40px;
+}
+
+.text-container a{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: var(--normal);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.text-container a:hover{
+    opacity: .8;
+}
+
+
+.layanan-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(img/building-background-2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0.9;
+}
+
+.layanan-container h1{
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    font-family: "Roboto";
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+.layanan-wrap{
+    margin-top: 80px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.layanan{
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+}
+
+.layanan-text-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10%;
+    transition: 500ms;
+}
+
+.layanan-text-container:hover{
+    background-color: rgba(225, 161, 0, 0.7);
+}
+
+.layanan h2{
+    font-family: "Roboto";
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 10px rgb(0,0,0,.5);
+}
+
+.layanan h3{
+    font-family: "Roboto";
+    color: var(--white);
+    text-align: center;
+    font-weight: var(--light);
+    font-size: 16px;
+    text-shadow: 2px 2px 10px rgb(0,0,0,.5);
+}
+
+.layanan a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Roboto";
+    font-weight: var(--light);
+    font-size: 16px;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: 500ms;
+}
+
+.layanan a:hover{
+    border: 0;
+    background-color: var(--white);
+    color: var(--yellow);
+}
+
+.n1{
+    background-image: url(img/layanan-3.jpg);
+}
+
+.n2{
+    background-image: url(img/layanan-2.jpg);
+}
+
+.n3{
+    background-image: url(img/layanan-4.jpg);
+}
+
+.n4{
+    background-image: url(img/building-background.jpg);
+}
+
+.tentang-kami-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tentang-kami-container h1{
+    position: absolute;
+    color: var(--white);
+    width: 100%;
+    height: 140px;
+    top: 0;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    font-size: 48px;
+}
+
+.card-container{
+    max-width: 1000px;
+    width: 70%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: top;
+}
+
+.card .x1{
+    background-image: url(img/lawyer\ image-2.jpg);
+}
+
+.card .x2{
+    background-image: url(img/lawyer\ image-5.jpg);
+}
+
+.card .x3{
+    background-image: url(img/lawyer\ image-4.jpg);
+}
+
+.card h2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: var(--light);
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.card a{
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: var(--light);
+    transition: 300ms;
+}
+
+.card a:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.card .whatsapp{
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+.card .whatsapp:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+.hubungi-kami{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/building-background-2\ dark.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-hub{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(225, 161, 0, 0.7);
+}
+
+.hubungi-kami h1{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    color: var(--white);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hubungi-kami p{
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: var(--light);
+    color: var(--white);
+    margin-bottom: 28px;
+    text-align: center;
+    line-height: 28px;
+    text-shadow: 2px 2px 10px rgb(0,0,0,.5);
+}
+
+.hubungi-kami a{
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: var(--light);
+    padding: 15px;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 300ms;
+}
+
+.hubungi-kami a:hover{
+    background-color: var(--white);
+    color: var(--yellow);
+}
+
+
+.footer{
+    width: 100%;
+    background-color: var(--black);
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+.social img:hover{
+    opacity: 0.7;
+}
+
+.address a{
+    text-decoration: none;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address img{
+    width: 40px;
+    height: 40px;
+}
+
+.address img:hover{
+    opacity: 0.7;
+}
+
+.address h1{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto";
+    font-weight: var(--light);
+    color: #d4d4d4;
+    margin-left: 40px;
+}
+
+
+
+@media only screen and (max-width:1150px){
+    .navigation{
+        width: 450px;
+    }
+
+    .navigation a{
+        font-size: 14px;
+    }
+
+    .text-container{
+        padding: 0 60px;
+    }
+
+    .text-container h1{
+        font-size: 56px;
+    }
+
+    .text-container h2{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .text-container a{
+        font-size: 16px;
+        width: 180px;
+        height: 40px;
+    }
+
+    .layanan h3{
+        font-size: 14px;
+    }
+
+    .layanan a{
+        font-size: 14px;
+    }
+
+    .card-container{
+        width: 80%;
+    }
+
+    .hubungi-kami{
+        padding: 30px 0;
+    }
+
+    .hubungi-kami h1{
+        font-size: 36px;
+    }
+
+    .hubungi-kami p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .hubungi-kami a{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .address a{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .nav-bar{
+        padding: 0 30px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .navigation{
+        width: 0;
+    }
+    .navigation img{
+        display: block;
+    }
+    .navigation a{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+        position: absolute;
+    }
+    .text-container{
+        position: relative;
+        padding: 10% 20%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(0,0,0,.5);
+    }
+    .text-container h1{
+        font-size: 48px;
+        text-shadow: 2px 2px 10px rgb(0,0,0,.5);
+    }
+    .text-container h2{
+        font-size: 20px;
+        text-shadow: 2px 2px 10px rgb(0,0,0,.5);
+    }
+    .layanan-container{
+        height: 140%;
+    }
+    .layanan-container h1{
+        font-size: 36px;
+        height: 120px;
+    }
+    .layanan-wrap{
+        height: 80%;
+    }
+    .layanan{
+        width: 50%;
+    }
+    .tentang-kami-container h1{
+        font-size: 36px;
+    }
+    .card{
+        width: 30%;
+    }
+    .hubungi-kami, .overlay-hub{
+        height: 120%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: start;
+    }
+    .social{
+        min-width: 300px;
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .address{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .nav-bar{
+        height: 50px;
+    }
+    .navigation img{
+        top: 10px;
+    }
+    .text-container h1{
+        font-size: 36px;
+    }
+    .text-container h2{
+        font-size: 18px;
+    }
+    .layanan-container{
+        height: 300%;
+    }
+    .layanan-wrap{
+        min-width: 250px;
+        width: 55%;
+        height: 90%;
+    }
+    .layanan{
+        width: 100%;
+        height: 25%;
+    }
+    .tentang-kami-container{
+        height: 270%;
+    }
+    .tentang-kami-container h1{
+        width: 90%;
+        text-align: center;
+    }
+    .card-container{
+        min-width: 250px;
+        width: 55%;
+        height: 85%;
+    }
+    .card{
+        width: 100%;
+        height: 30%;
+    }
+    .hubungi-kami, .overlay-hub{
+        height: 150%;
+    }
+    .hubungi-kami h1{
+        font-size: 28px;
+    }
+    .hubungi-kami p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .social{
+        width: 80%;
+        min-width: 0;
+    }
+    .social img{
+        width: 30px;
+        height: 30px;
+    }
+    .address{
+        width: 90%;
+    }
+    .address a{
+        width: 100%;
+    }
+    .address img{
+        width: 30px;
+        height: 30px;
+    }
+    .address h1{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width:400px){
+    .hubungi-kami, .overlay-hub{
+        height: 170%;
+    }
+}
