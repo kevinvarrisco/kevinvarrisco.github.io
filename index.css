@@ -383,7 +383,7 @@
 
 .hubungi-kami{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-image: url(img/building-background-2\ dark.jpg);
     background-size: cover;
     background-position: center;
@@ -391,6 +391,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 60px 0;
 }
 
 .overlay-hub{
@@ -541,10 +543,6 @@
         width: 80%;
     }
 
-    .hubungi-kami{
-        padding: 30px 0;
-    }
-
     .hubungi-kami h1{
         font-size: 36px;
     }
@@ -621,9 +619,6 @@
     .card{
         width: 30%;
     }
-    .hubungi-kami, .overlay-hub{
-        height: 120%;
-    }
     .footer{
         flex-direction: column;
         align-items: start;
@@ -639,12 +634,6 @@
 }
 
 @media only screen and (max-width:600px){
-    .nav-bar{
-        height: 50px;
-    }
-    .navigation img{
-        top: 10px;
-    }
     .text-container h1{
         font-size: 36px;
     }
@@ -654,6 +643,9 @@
     .layanan-container{
         height: 300%;
     }
+    .overlay-container{
+        opacity: 0.95;
+    }
     .layanan-wrap{
         min-width: 250px;
         width: 55%;
@@ -661,7 +653,8 @@
     }
     .layanan{
         width: 100%;
-        height: 25%;
+        height: 23%;
+        box-shadow: 2px 2px 10px rgb(0,0,0,.5);
     }
     .tentang-kami-container{
         height: 270%;
@@ -672,15 +665,12 @@
     }
     .card-container{
         min-width: 250px;
-        width: 55%;
+        width: 50%;
         height: 85%;
     }
     .card{
         width: 100%;
-        height: 30%;
-    }
-    .hubungi-kami, .overlay-hub{
-        height: 150%;
+        height: 25%;
     }
     .hubungi-kami h1{
         font-size: 28px;
@@ -709,10 +699,5 @@
     }
     .address h1{
         margin-left: 20px;
-    }
-}
-@media only screen and (max-width:400px){
-    .hubungi-kami, .overlay-hub{
-        height: 170%;
     }
 }
