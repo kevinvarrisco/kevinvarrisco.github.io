@@ -16,64 +16,6 @@
     box-sizing: border-box;
 }
 
-.nav-bar{
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
-    background-color: var(--yellow);
-    z-index: 999;
-}
-
-.logo{
-    width: 300px;
-    color: var(--white);
-    font-size: 24px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.navigation{
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation img{
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    display: none;
-    width: 30px;
-    height: 30px;
-}
-
-.navigation a{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 16px;
-    font-family: "Roboto";
-    position: relative;
-}
-
-.navigation a::before{
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: var(--white);
-    position: absolute;
-    bottom: -5px;
-    transition: 0.3s;
-    opacity: 0.8;
-}
-
-.navigation a:hover::before{
-    width: 100%;
-}
-
 .hero-container{
     width: 100%;
     height: 100%;
@@ -449,69 +391,8 @@
 }
 
 
-.footer{
-    width: 100%;
-    background-color: var(--black);
-    padding: 30px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social{
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social img{
-    width: 40px;
-    height: 40px;
-}
-
-.social img:hover{
-    opacity: 0.7;
-}
-
-.address a{
-    text-decoration: none;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.address img{
-    width: 40px;
-    height: 40px;
-}
-
-.address img:hover{
-    opacity: 0.7;
-}
-
-.address h1{
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: "Roboto";
-    font-weight: var(--light);
-    color: #d4d4d4;
-    margin-left: 40px;
-}
-
-
 
 @media only screen and (max-width:1150px){
-    .navigation{
-        width: 450px;
-    }
-
-    .navigation a{
-        font-size: 14px;
-    }
-
     .text-container{
         padding: 0 60px;
     }
@@ -557,28 +438,9 @@
         font-size: 16px;
         padding: 12px;
     }
-
-    .address a{
-        width: 400px;
-    }
 }
 
 @media only screen and (max-width:850px){
-    .nav-bar{
-        padding: 0 30px;
-    }
-    .logo{
-        font-size: 20px;
-    }
-    .navigation{
-        width: 0;
-    }
-    .navigation img{
-        display: block;
-    }
-    .navigation a{
-        display: none;
-    }
     .hero{
         width: 100%;
         position: absolute;
@@ -618,18 +480,6 @@
     }
     .card{
         width: 30%;
-    }
-    .footer{
-        flex-direction: column;
-        align-items: start;
-    }
-    .social{
-        min-width: 300px;
-        width: 50%;
-        margin-bottom: 40px;
-    }
-    .address{
-        width: 50%;
     }
 }
 
@@ -678,26 +528,5 @@
     .hubungi-kami p{
         font-size: 14px;
         line-height: 24px;
-    }
-    .social{
-        width: 80%;
-        min-width: 0;
-    }
-    .social img{
-        width: 30px;
-        height: 30px;
-    }
-    .address{
-        width: 90%;
-    }
-    .address a{
-        width: 100%;
-    }
-    .address img{
-        width: 30px;
-        height: 30px;
-    }
-    .address h1{
-        margin-left: 20px;
     }
 }
