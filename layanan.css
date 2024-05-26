@@ -55,6 +55,7 @@
     align-items: start;
     position: relative;
     padding: 60px;
+    margin-bottom: 40px;
 }
 
 .image{
@@ -120,24 +121,24 @@
     opacity: 0.8;
 }
 
-.perdata, .pailit{
+#perdata, #pailit{
     flex-direction: row-reverse;
 }
 
-.pidana .image{
+#pidana .image{
     background-image: url(img/layanan-3.jpg);
     height: 700px;
 }
 
-.perdata .image{
+#perdata .image{
     background-image: url(img/layanan-2.jpg);
 }
 
-.tun .image{
+#tun .image{
     background-image: url(img/layanan-4.jpg);
 }
 
-.pailit .image{
+#pailit .image{
     background-image: url(img/building-background.jpg);
 }
 

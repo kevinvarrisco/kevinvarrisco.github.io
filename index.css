@@ -308,18 +308,19 @@
 }
 
 .card a:hover{
+    margin-bottom: 5px;
+}
+
+.card .kontak{
+    border: 0;
     background-color: var(--yellow);
     color: var(--white);
+    font-weight: var(--normal);
+    letter-spacing: 0.05em;
 }
 
-.card .whatsapp{
-    border: 2px solid var(--green);
-    color: var(--green);
-}
-
-.card .whatsapp:hover{
-    background-color: var(--green);
-    color: var(--white);
+.card .kontak:hover{
+    margin-top: -5px;
 }
 
 
