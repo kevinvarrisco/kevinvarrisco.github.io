@@ -1,0 +1,95 @@
+:root{
+    --white : #ffffff;
+    --black : #101010;
+    --lightblack : #1f1f1f;
+    --yellow : #e1a100;
+    --green : rgb(17, 181, 74);
+
+    --bold : 700;
+    --normal : 500;
+    --light : 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--black);
+    padding: 60px;
+}
+
+.image-wrap{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#image-2{
+    flex-direction: row-reverse;
+}
+
+.image{
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+
+#image-1 .image{
+    background-image: url(img/court-session-1.jpg);
+}
+
+#image-2 .image{
+    background-image: url(img/court-session-2.jpg);
+}
+
+#image-3 .image{
+    background-image: url(img/court-session-3.jpg);
+}
+
+.caption-wrap{
+    width: 55%;
+}
+
+.caption-wrap h1{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #c4c4c4;
+    margin-bottom: 20px;
+}
+
+.caption-wrap p{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: var(--light);
+    line-height: 24px;
+    color: #c4c4c4;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px){
+    .image-wrap, #image-2{
+        flex-direction: column;
+        height: 1000px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .caption-wrap{
+        width: 100%;
+    }
+}
