@@ -30,3 +30,17 @@ function klikNav2(){
 
 navLogo.onclick = klikNav1
 
+
+var socialLink = document.querySelectorAll(".social a") 
+var addressLink = document.querySelectorAll(".address a")[0]
+
+function footerNoSocial(){
+    alert("Ini hanya contoh website. Tidak ada link alamat dan sosial media untuk website ini.")
+}
+
+for(var i = 0; i < 4; i++){
+    socialLink[i].onclick = footerNoSocial
+}
+
+addressLink.onclick = footerNoSocial
+

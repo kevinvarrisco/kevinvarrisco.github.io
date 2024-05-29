@@ -25,7 +25,6 @@
 
 .image-wrap{
     width: 80%;
-    height: 400px;
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
@@ -43,7 +42,7 @@
     background-position: center;
     background-size: cover;
     width: 40%;
-    height: 100%;
+    height: 400px;
 }
 
 #image-1 .image{
@@ -79,10 +78,28 @@
     text-align: justify;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1150px){
+    .image-wrap{
+        width: 95%;
+    }
+    .image{
+        width: 45%;
+    }
+    .caption-wrap{
+        width: 50%;
+    }
+    .caption-wrap h1{
+        font-size: 16px;
+    }
+    .caption-wrap p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 850px){
     .image-wrap, #image-2{
         flex-direction: column;
-        height: 1000px;
         width: 100%;
     }
     .image{
@@ -91,5 +108,14 @@
     }
     .caption-wrap{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 30px;
+    }
+    .image{
+        height: 300px;
     }
 }
